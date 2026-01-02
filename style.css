@@ -1,4 +1,4 @@
-* {
+{
     margin: 0;
     padding: 0;
     box-sizing: border-box;
@@ -9,14 +9,14 @@ body {
     line-height: 1.6;
 }
 
-/* Navbar */
+
 nav {
+    background: #1f2933;
+    color: white;
+    padding: 15px 30px;
     display: flex;
     justify-content: space-between;
     align-items: center;
-    padding: 15px 30px;
-    background: #222;
-    color: #fff;
     position: sticky;
     top: 0;
 }
@@ -31,7 +31,7 @@ nav ul li {
 }
 
 nav ul li a {
-    color: #fff;
+    color: white;
     text-decoration: none;
 }
 
@@ -39,31 +39,40 @@ nav ul li a {
     font-size: 22px;
 }
 
-/* Sections */
+
 .section {
     padding: 60px 20px;
     text-align: center;
 }
 
 .home {
-    background: #f4f4f4;
     height: 90vh;
+    background: #f3f4f6;
     display: flex;
     flex-direction: column;
     justify-content: center;
 }
 
 .home span {
-    color: #007bff;
+    color: #2563eb;
 }
 
 .home button {
     margin-top: 20px;
     padding: 10px 20px;
+    background: #2563eb;
+    color: white;
     border: none;
-    background: #007bff;
-    color: #fff;
     cursor: pointer;
+}
+
+
+.list {
+    margin-top: 15px;
+}
+
+.list li {
+    margin: 8px 0;
 }
 
 /* Skills */
@@ -75,43 +84,44 @@ nav ul li a {
 }
 
 .skills li {
-    background: #007bff;
+    background: #2563eb;
     color: white;
     padding: 8px 15px;
     margin: 5px;
     border-radius: 5px;
 }
 
-/* Projects */
+
 .project-card {
-    background: #f4f4f4;
+    background: #e5e7eb;
     margin: 15px auto;
     padding: 20px;
-    max-width: 500px;
+    max-width: 600px;
     border-radius: 8px;
 }
 
-/* Contact */
+
 .contact {
-    background: #222;
+    background: #1f2933;
     color: white;
 }
 
-/* Footer */
+.contact a {
+    color: #93c5fd;
+    text-decoration: none;
+}
+
+
 footer {
-    background: #111;
+    background: #111827;
     color: white;
-    text-align: center;
     padding: 10px;
+    text-align: center;
 }
 
-/* Responsive */
+
 @media (max-width: 768px) {
     nav ul {
-        flex-direction: column;
-    }
-
-    .skills {
         flex-direction: column;
     }
 }
